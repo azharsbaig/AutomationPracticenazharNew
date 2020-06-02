@@ -6,7 +6,7 @@ import com.generic.coding.Login;
 
 public class SmokeTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Throwable {
 		//Login.getLogin();
 		DressSelectionInheritance.getDress();
 	//CheckOut.getChkOut(driver);

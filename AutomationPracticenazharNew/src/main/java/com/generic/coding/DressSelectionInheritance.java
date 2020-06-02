@@ -11,7 +11,7 @@ import com.page.object.model.DressPage;
 
 public class DressSelectionInheritance extends Login {
 	
-	public static void getDress() {
+	public static void getDress() throws Throwable {
 	
 		WebDriver driver = getLogin();
 		

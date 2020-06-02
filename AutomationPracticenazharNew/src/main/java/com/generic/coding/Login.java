@@ -9,20 +9,23 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 
+import com.config.BaseConfig;
 import com.page.object.model.LoginPage;
+import com.util.Highlighter;
 
 public class Login {
 	
 	static WebDriver driver;
 	
-	public static WebDriver getLogin() {
+	public static WebDriver getLogin() throws Throwable {
 		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
 		Logger.getLogger("org.openqa.selenium").setLevel(Level.OFF);	
 		
 		driver=new ChromeDriver();
 		
-		driver.get("http://automationpractice.com/index.php");
+		driver.get(BaseConfig.getconfig("URL"));
+		//driver.get("URL");
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		
@@ -33,12 +36,16 @@ public class Login {
 		
 		LoginPage logins= new LoginPage(driver);
 		
+		new Highlighter().getcolor(driver, logins.getSignInBtn(), "green", "red");
 		logins.getSignInBtn().click();
+				
+		new Highlighter().getcolor(driver, logins.getEmail(), "green", "red");
+		logins.getEmail().sendKeys(BaseConfig.getconfig("email"));
 		
-		logins.getEmail().sendKeys("eezee1010@hotmail.com");
+		new Highlighter().getcolor(driver, logins.getPass(), "green", "red");
+		logins.getPass().sendKeys(BaseConfig.getconfig("pass"));
 		
-		logins.getPass().sendKeys("love7232");
-		
+		new Highlighter().getcolor(driver, logins.getSubmit(), "green", "red");
 		logins.getSubmit().click();
 		
 		return driver;		
