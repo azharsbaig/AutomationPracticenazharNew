@@ -9,10 +9,13 @@ import com.util.ExplicitWait;
 
 public class CheckOut {
 	public static WebDriver getChkOut(WebDriver driver) {
+		
 		CheckOutPage chkOut = new CheckOutPage(driver);
 
-		new ExplicitWait().getExplicitWaitVisible(driver, chkOut.getPopChkOut());
+		new ExplicitWait().getExplicitWaitVisible(driver,chkOut.getPopChkOut() );
+		
 		chkOut.getPopChkOut().click();
+		//chkOut.getpopChkOut().click();
 
 		new ExplicitWait().getExplicitWaitVisible(driver, chkOut.getSumChkOut());				
 		

@@ -10,7 +10,8 @@ public class CheckOutPage {
 		PageFactory.initElements(driver, this);
 		
 	}
-	@FindBy(xpath="(//*[@class='btn btn-default button button-medium']")
+	//@FindBy(xpath="(//*[@class='btn btn-default button button-medium']")
+	@FindBy(xpath="//*[@title='Proceed to checkout']")
 	private WebElement popChkOut;
 	
 	@FindBy(xpath="//*[@class='button btn btn-default standard-checkout button-medium']")
