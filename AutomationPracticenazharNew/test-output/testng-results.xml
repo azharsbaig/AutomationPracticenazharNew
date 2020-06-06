@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22570" started-at="2020-06-02T19:25:41Z" finished-at="2020-06-02T19:26:03Z">
+  <suite name="Default suite" duration-ms="18443" started-at="2020-06-04T11:26:03Z" finished-at="2020-06-04T11:26:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22570" started-at="2020-06-02T19:25:41Z" finished-at="2020-06-02T19:26:03Z">
+    <test name="Default test" duration-ms="18443" started-at="2020-06-04T11:26:03Z" finished-at="2020-06-04T11:26:21Z">
       <class name="com.smoke.test.SanityTestNG">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.smoke.test.SanityTestNG@23986957]" name="setup" is-config="true" duration-ms="11389" started-at="2020-06-02T19:25:41Z" finished-at="2020-06-02T19:25:52Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.smoke.test.SanityTestNG@23986957]" name="setup" is-config="true" duration-ms="9262" started-at="2020-06-04T11:26:03Z" finished-at="2020-06-04T11:26:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="sanityTest1()[pri:0, instance:com.smoke.test.SanityTestNG@23986957]" name="sanityTest1" duration-ms="3979" started-at="2020-06-02T19:25:52Z" finished-at="2020-06-02T19:25:56Z">
+        <test-method status="PASS" signature="sanityTest1()[pri:0, instance:com.smoke.test.SanityTestNG@23986957]" name="sanityTest1" duration-ms="2770" started-at="2020-06-04T11:26:12Z" finished-at="2020-06-04T11:26:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityTest1 -->
-        <test-method status="PASS" signature="sanityTest2()[pri:0, instance:com.smoke.test.SanityTestNG@23986957]" name="sanityTest2" duration-ms="4259" started-at="2020-06-02T19:25:56Z" finished-at="2020-06-02T19:26:00Z">
+        <test-method status="PASS" signature="sanityTest2()[pri:0, instance:com.smoke.test.SanityTestNG@23986957]" name="sanityTest2" duration-ms="3573" started-at="2020-06-04T11:26:15Z" finished-at="2020-06-04T11:26:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityTest2 -->
-        <test-method status="PASS" signature="sanityTest3()[pri:0, instance:com.smoke.test.SanityTestNG@23986957]" name="sanityTest3" duration-ms="2301" started-at="2020-06-02T19:26:00Z" finished-at="2020-06-02T19:26:03Z">
+        <test-method status="PASS" signature="sanityTest3()[pri:0, instance:com.smoke.test.SanityTestNG@23986957]" name="sanityTest3" duration-ms="2175" started-at="2020-06-04T11:26:18Z" finished-at="2020-06-04T11:26:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityTest3 -->
-        <test-method status="PASS" signature="complete()[pri:0, instance:com.smoke.test.SanityTestNG@23986957]" name="complete" is-config="true" duration-ms="612" started-at="2020-06-02T19:26:03Z" finished-at="2020-06-02T19:26:03Z">
+        <test-method status="PASS" signature="complete()[pri:0, instance:com.smoke.test.SanityTestNG@23986957]" name="complete" is-config="true" duration-ms="638" started-at="2020-06-04T11:26:21Z" finished-at="2020-06-04T11:26:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- complete -->
