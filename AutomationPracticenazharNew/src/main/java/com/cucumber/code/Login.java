@@ -1,4 +1,4 @@
-package com.generic.coding;
+package com.cucumber.code;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,28 +16,25 @@ import com.util.Highlighter;
 
 public class Login {	
 	
-	public WebDriver setupBrowser(String madhori) {
-		WebDriver driver=null;
-		if (madhori.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
-			System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
-			Logger.getLogger("org.openqa.selenium").setLevel(Level.OFF);			
-			driver=new ChromeDriver();
-			
-		} else if (madhori.equalsIgnoreCase("firefox")) {			
-			System.setProperty("webdriver.gecko.driver", "./Driver/geckodriver.exe");
-			driver=new FirefoxDriver();
-		}
+	public WebDriver setupBrowser() {
 		
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+		System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
+		Logger.getLogger("org.openqa.selenium").setLevel(Level.OFF);			
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
 		return driver;
+	}
+	
+	public void getWebPage(WebDriver driver) throws Throwable {
+		driver.get(BaseConfig.getconfig("URL"));
 	}
 	
 	public void getLogin(WebDriver driver) throws Throwable {		
 		
-		driver.get(BaseConfig.getconfig("URL"));
-		//driver.get("URL");
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
+		
+		//driver.get("URL");		
 		
 		//********	Finding Website	********
 		System.out.println(driver.getCurrentUrl());

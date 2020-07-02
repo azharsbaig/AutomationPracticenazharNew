@@ -9,11 +9,11 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.page.object.model.DressPage;
 
-public class DressSelectionInheritance extends Login {
+public class DressSelectionInheritance extends LoginNew {
 	
 	public static void getDress() throws Throwable {
 	
-		WebDriver driver = getLogin();
+		WebDriver driver = getLoginNew();
 		
 		DressPage dresses = new DressPage(driver);
 		dresses.getDressBtn().click();
@@ -45,5 +45,10 @@ public class DressSelectionInheritance extends Login {
 	dresses.getAddToCart().click();
 	
 
+	}
+
+	private static WebDriver getLoginNew() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

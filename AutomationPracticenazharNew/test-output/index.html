@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Az\AppData\Local\Temp\testng-eclipse-634665082\testng-customsuite.xml</span>
+                    <span>C:\Users\Az\AppData\Local\Temp\testng-eclipse-1090098170\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.smoke.test.SanityTestNG" hash-for-method="sanityTest1">sanityTest1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.smoke.test.SanityTestNG" hash-for-method="sanityTest2">sanityTest2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.smoke.test.SanityTestNG" hash-for-method="sanityTest3">sanityTest3</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.test.runner.AutomationRunner" hash-for-method="runScenario(&quot;Automation of Dress Selection&quot;, &quot;Automation Practice&quot;)">runScenario("Automation of Dress Selection", "Automation Practice")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -130,28 +120,17 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.smoke.test.SanityTestNG</span>
+              <span class="class-name">com.test.runner.AutomationRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="sanityTest1">
-                  </a> <!-- sanityTest1 -->
-                  <span class="method-name">sanityTest1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="sanityTest2">
-                  </a> <!-- sanityTest2 -->
-                  <span class="method-name">sanityTest2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="sanityTest3">
-                  </a> <!-- sanityTest3 -->
-                  <span class="method-name">sanityTest3</span>
+                  <a name="runScenario(&quot;Automation of Dress Selection&quot;, &quot;Automation Practice&quot;)">
+                  </a> <!-- runScenario("Automation of Dress Selection", "Automation Practice") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Automation of Dress Selection", "Automation Practice")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,7 +138,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Az\AppData\Local\Temp\testng-eclipse-634665082\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Az\AppData\Local\Temp\testng-eclipse-1090098170\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -168,7 +147,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.smoke.test.SanityTestNG&quot;/&gt;
+      &lt;class name=&quot;com.test.runner.AutomationRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -192,6 +171,14 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -208,24 +195,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'sanityTest2')
-data.setCell(0, 2, 'com.smoke.test.SanityTestNG')
-data.setCell(0, 3, 3573);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'sanityTest1')
-data.setCell(1, 2, 'com.smoke.test.SanityTestNG')
-data.setCell(1, 3, 2770);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'sanityTest3')
-data.setCell(2, 2, 'com.smoke.test.SanityTestNG')
-data.setCell(2, 3, 2175);
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'com.test.runner.AutomationRunner')
+data.setCell(0, 3, 13714);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -251,27 +230,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.smoke.test.SanityTestNG</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setup</span>
+              <div class="chronological-class-name">com.test.runner.AutomationRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">sanityTest1</span>
-                <span class="method-start">9277 ms</span>
+                <span class="method-name">runScenario("Automation of Dress Selection", "Automation Practice")</span>
+                <span class="method-start">177 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">sanityTest2</span>
-                <span class="method-start">12050 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">sanityTest3</span>
-                <span class="method-start">15625 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">complete</span>
-                <span class="method-start">17803 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">13896 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
