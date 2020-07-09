@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.smoke.test.SanityTestNG">
+      <class name="com.test.runner.FinalVersionPro">
         <methods>
-          <include name="sanityTest2"/>
-          <include name="setup"/>
-          <include name="sanityTest3"/>
-          <include name="complete"/>
-          <include name="signIn"/>
+          <include name="setUpClass"/>
+          <include name="runScenario"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.smoke.test.SanityTestNG -->
+      </class> <!-- com.test.runner.FinalVersionPro -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

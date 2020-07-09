@@ -109,6 +109,9 @@ public class BaseLogin {
 		WebElement orderSum = driver.findElement(By.xpath("//*[@class='box order-confirmation']"));
 		System.out.println(orderSum.getText());
 		
+		WebElement logout = driver.findElement(By.xpath("//*[@class='logout']"));
+		logout.click();
+		
 		
 		
 		driver.quit();

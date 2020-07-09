@@ -1,4 +1,4 @@
-Feature: Automation Practice
+Feature: Automation Practice Azhar
 description: Login
 Scenario: Automation of Dress Selection
 Given User is on automationPage

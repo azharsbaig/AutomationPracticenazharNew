@@ -3,6 +3,7 @@ package com.smoke.test;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.generic.coding.CheckOut;
@@ -16,8 +17,9 @@ public class SanityTestNG {
 	WebDriver driver;
 		
 	@BeforeTest
-	public void setup() throws Throwable {		
-		driver = LoginNew.setupBrowser();
+	@Parameters("BrowserName")
+	public void setup(String browser) throws Throwable {		
+		driver = LoginNew.setupBrowser(browser);
 		LoginNew.getWebPage(driver);
 		LoginNew.getLogin(driver);
 	}

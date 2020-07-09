@@ -16,6 +16,6 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		
 		)
 
-public class AutomationRunner extends AbstractTestNGCucumberTests{
+public class FinalVersionPro extends AbstractTestNGCucumberTests{
 
 }

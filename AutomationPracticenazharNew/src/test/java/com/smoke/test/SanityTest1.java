@@ -13,7 +13,7 @@ public class SanityTest1 {
 		public static void main(String[] args) throws Throwable {
 			
 			//WebDriver driver = Login.getLoginNew();
-			WebDriver driver = LoginNew.setupBrowser();
+			WebDriver driver = LoginNew.setupBrowser("chrome");
 			LoginNew.getWebPage(driver);
 			LoginNew.getLogin(driver);
 			DressSelection.getDress(driver);

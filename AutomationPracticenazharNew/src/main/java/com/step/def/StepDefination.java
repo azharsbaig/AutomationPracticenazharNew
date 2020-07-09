@@ -15,8 +15,7 @@ public class StepDefination {
 	@Given("User is on automationPage")
 	public void user_is_on_automationPage() {
 		login = new Login();
-		driver =login.setupBrowser();
-	    
+		driver =login.setupBrowser();	    
 	}
 
 	@When("User clicks on the account")
@@ -27,8 +26,7 @@ public class StepDefination {
 
 	@When("User write username and password and click on Submit")
 	public void user_write_username_and_password_and_click_on_Submit() throws Throwable {
-		login.getLogin(driver);
-	    
+		login.getLogin(driver);	    
 	}
 
 	@Then("User is signed in")
@@ -39,23 +37,21 @@ public class StepDefination {
 
 	@When("User select dress")
 	public void user_select_dress() {
-	    
+	    assertEquals(true,true);
 	}
 
 	@Then("Dress selected")
 	public void dress_selected() {
-	    
+		assertEquals(true,true);
 	}
 
 	@When("User pay the price and logout")
 	public void user_pay_the_price_and_logout() {
-	    
+		assertEquals(true,true);
 	}
 
 	@Then("User Logout")
 	public void user_Logout() {
-	    
+		driver.quit();
 	}
-
-
 }

@@ -36,7 +36,7 @@ public class Login {
 		
 		driver.get(BaseConfig.getconfig("URL"));
 		//driver.get("URL");
-		driver.manage().window().maximize();
+		////driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		
 		//********	Finding Website	********
